@@ -1,8 +1,113 @@
+// breakpoints
+$tablet: 768px;
+$desktop: 1440px;
+
+// colors
+$color-purple-600: hsl(246, 80%, 60%);
+$color-orange-300: #ff8c66;
+$color-blue-300: #56c2e6;
+$color-pink-400: #ff5c7c;
+$color-green-400: #4acf81;
+$color-purple-700: #7536d3;
+$color-yellow-300: #f1c65b;
+$color-navy-950: #0f1424;
+$color-navy-900: #1c1f4a;
+$color-purple-500: #6f76c8;
+$color-navy-200: #bdc1ff;
+$color-white: hsl(0, 0%, 100%);
+$color-footer: hsl(228, 45%, 44%);
+
+// spacing
+$spacing-100: 0.5rem;
+$spacing-200: 1rem;
+$spacing-300: 1.5rem;
+$spacing-400: 2rem;
+$spacing-500: 2.5rem;
+
+// radius
+$radius-cards: 15px;
+
+// typography
+$fs-hours: clamp(2rem, 4vw, 3.5rem);
+$lh-hours: 1.18;
+$fw-hours: 300;
+
+$fs-title: clamp(1.75rem, 5vw, 2.5rem);
+$lh-title: 1.18;
+$fw-title: 300;
+
+$fs-body: 1.125rem;
+$lh-body: 1.17;
+$fw-body: 400;
+
+$fs-small: 0.9375rem;
+$lh-small: 1.2;
+$fw-small: 500;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+img,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
 .attribution {
     font-size: 0.6875rem;
     text-align: center;
 
     a {
-        color: hsl(228, 45%, 44%);
+        color: $color-footer;
     }
+}
+
+@media (min-width: $tablet) {
+    // tablet
+}
+
+@media (min-width: $desktop) {
+    // desktop
 }
