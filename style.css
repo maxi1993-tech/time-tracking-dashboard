@@ -61,6 +61,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
 .card-profil {
@@ -79,17 +80,17 @@ body {
   border: 3px solid hsl(0, 0%, 100%);
   border-radius: 50%;
 }
-.card-profil .profil-content .card-content {
+.card-profil .profil-content .card-info {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.card-profil .profil-content .card-content .profil-paragraph {
+.card-profil .profil-content .card-info .profil-paragraph {
   font-size: 0.9375rem;
   line-height: 1.2;
   font-weight: 300;
 }
-.card-profil .profil-content .card-content .profil-title {
+.card-profil .profil-content .card-info .profil-title {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
   line-height: 1.18;
   font-weight: 300;
@@ -117,8 +118,22 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
+#cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  border-radius: 15px;
+  max-width: 20.4375rem;
+  width: 100%;
+  min-height: 10rem;
+}
+
 .card-body {
   background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
 }
 
 .attribution {

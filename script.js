@@ -25,7 +25,7 @@ async function init() {
     const previous = item.timeframes.weekly.previous;
     const color = config[item.title].color;
     const icon = config[item.title].icon;
-    const cardHTML = `<article class="card" style="background-color: ${color}"><img src="${icon}" alt=""><div class="card-header"><h2>${item.title}</h2><img src="./images/icon-ellipsis.svg" alt=""></div><div class="card-body"><p>${current}hrs</p><p>Last Week - ${previous}hrs</p></div></article>`;
+    const cardHTML = `<article class="card" style="background-color: ${color}"><img src="${icon}" alt=""><div class="card-body"><div class="card-header"><h2>${item.title}</h2><img src="./images/icon-ellipsis.svg" alt=""></div><div class="card-content"><p>${current}hrs</p><p>Last Week - ${previous}hrs</p></div></div></article>`;
     container.innerHTML += cardHTML;
   }
 

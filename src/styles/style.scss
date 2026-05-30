@@ -108,6 +108,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
+  gap: $spacing-300;
 }
 
 .card-profil {
@@ -127,7 +128,7 @@ body {
       border-radius: $radius-img;
     }
 
-    .card-content {
+    .card-info {
       display: flex;
       flex-direction: column;
       gap: $spacing-100;
@@ -172,9 +173,22 @@ body {
     }
   }
 }
+#cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-300;
+}
+
+.card {
+  border-radius: $radius-cards;
+  max-width: 20.4375rem;
+  width: 100%;
+  min-height: 10rem;
+}
 
 .card-body {
   background-color: $color-navy-900;
+  border-radius: $radius-cards;
 }
 
 .attribution {
