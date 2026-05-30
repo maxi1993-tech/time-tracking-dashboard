@@ -4,16 +4,16 @@ $desktop: 1440px;
 
 // colors
 $color-purple-600: hsl(246, 80%, 60%);
-$color-orange-300: #ff8c66;
-$color-blue-300: #56c2e6;
-$color-pink-400: #ff5c7c;
-$color-green-400: #4acf81;
-$color-purple-700: #7536d3;
-$color-yellow-300: #f1c65b;
-$color-navy-950: #0f1424;
-$color-navy-900: #1c1f4a;
-$color-purple-500: #6f76c8;
-$color-navy-200: #bdc1ff;
+$color-orange-300: hsl(15, 100%, 70%);
+$color-blue-300: hsl(195, 74%, 62%);
+$color-pink-400: hsl(348, 100%, 68%);
+$color-green-400: hsl(145, 58%, 55%);
+$color-purple-700: hsl(264, 64%, 52%);
+$color-yellow-300: hsl(43, 84%, 65%);
+$color-navy-950: hsl(226, 43%, 10%);
+$color-navy-900: hsl(235, 46%, 20%);
+$color-purple-500: hsl(235, 45%, 61%);
+$color-navy-200: hsl(236, 100%, 87%);
 $color-white: hsl(0, 0%, 100%);
 $color-footer: hsl(228, 45%, 44%);
 
@@ -171,6 +171,10 @@ body {
       color: $color-white;
     }
   }
+}
+
+.card-body {
+  background-color: $color-navy-900;
 }
 
 .attribution {
